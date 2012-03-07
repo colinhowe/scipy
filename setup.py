@@ -144,6 +144,10 @@ def configuration(parent_package='',top_path=None):
 
 
 def setup_package():
+    # Install numpy...
+    import os
+    os.system('pip install numpy==1.6.1')
+
     from numpy.distutils.core import setup
 
     old_path = os.getcwd()
